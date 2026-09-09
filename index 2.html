@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Setembro Amarelo — Uma mensagem para você</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#fff8d9;color:#222}
+main{max-width:760px;margin:auto;padding:28px 18px 40px}
+header{text-align:center;padding:25px 10px}
+h1{font-size:2.2rem;margin:.2em 0}.sub{font-size:1.15rem}
+.card{background:white;border-radius:18px;padding:28px;margin:20px 0;box-shadow:0 3px 16px #0001;text-align:center}
+#msg{font-size:1.45rem;line-height:1.45}
+button{border:0;border-radius:12px;padding:14px 20px;font-size:1rem;font-weight:bold;background:#f5c400;cursor:pointer}
+.help{background:#fff0a8;border-radius:15px;padding:20px;margin-top:22px}
+.small{font-size:.95rem;line-height:1.5}
+footer{text-align:center;margin-top:25px}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div style="font-size:3rem">💛</div>
+<h1>Setembro Amarelo</h1>
+<p class="sub">Você importa. Sua história importa.</p>
+<p>Uma mensagem de acolhimento pode ser o começo de uma conversa.</p>
+</header>
+
+<section class="card">
+<p id="msg">Clique abaixo para receber uma mensagem.</p>
+<button onclick="novaMensagem()">💛 Quero uma mensagem</button>
+</section>
+
+<section class="help">
+<h2>Precisa de ajuda?</h2>
+<p class="small">Se você estiver passando por um momento difícil, procure alguém de confiança e busque apoio profissional. Você não precisa enfrentar isso sozinho(a).</p>
+<p><strong>CVV — 188</strong><br>Apoio emocional gratuito.</p>
+<p class="small">Em uma situação de emergência ou risco imediato, procure um serviço de emergência ou uma unidade de saúde.</p>
+</section>
+
+<footer class="small">Setembro Amarelo • Juntos pela vida</footer>
+</main>
+
+<script>
+const mensagens = [
+"Você não precisa enfrentar tudo sozinho(a). Procure alguém de confiança e converse.",
+"Um dia difícil não define a sua história. Permita-se pedir ajuda.",
+"Sua vida tem valor, mesmo quando você não consegue enxergar isso.",
+"Falar sobre o que você está sentindo pode ser o primeiro passo.",
+"Você merece cuidado, acolhimento e apoio.",
+"Não tenha medo de pedir ajuda. Você não precisa passar por isso sozinho(a).",
+"Você é mais forte do que imagina, e pedir ajuda também é um ato de coragem.",
+"O seu sofrimento é real, e o que você sente merece ser ouvido.",
+"Há caminhos e pessoas que podem ajudar. Não se isole.",
+"Você já superou tantos desafios. Dê um passo de cada vez.",
+"Cada dia pode ser uma nova chance de recomeçar.",
+"Você é importante para muitas pessoas, mesmo que hoje não consiga perceber.",
+"Existem pessoas que se importam com você. Permita-se aproximar.",
+"Sua existência traz algo único ao mundo.",
+"Pensamentos difíceis não são verdades absolutas.",
+"Você pode não se sentir bem agora, mas isso pode mudar.",
+"Peça ajuda. Isso é sinal de coragem, não de fraqueza.",
+"Mesmo quando tudo parece distante, ainda pode existir um próximo passo.",
+"Você é único(a) e tem um valor imenso.",
+"A vida é feita de altos e baixos. Você não precisa enfrentar os baixos sozinho(a).",
+"Seja gentil consigo mesmo(a). Você está fazendo o melhor que consegue.",
+"Não se cobre tanto. Dê a si mesmo(a) o cuidado que daria a alguém querido.",
+"Compartilhar o que você sente pode aliviar o peso do coração.",
+"Você é capaz de viver novas experiências e encontrar novos motivos para seguir.",
+"A dor que você sente é real, mas ela não precisa definir o seu futuro.",
+"Você não precisa ser perfeito(a). Só precisa continuar sendo você.",
+"Você tem um futuro pela frente. Ele pode ser muito diferente do que você imagina hoje.",
+"Você já enfrentou muita coisa. Isso também mostra sua capacidade de continuar.",
+"Buscar ajuda é um ato de amor por você mesmo(a).",
+"Você importa. Sempre.",
+"A sua vida tem impacto, mesmo quando você não percebe.",
+"Você é amado(a), mesmo quando se sente sozinho(a).",
+"Você pode recomeçar quantas vezes for preciso.",
+"Não existe problema maior do que a sua vida.",
+"Você é mais forte do que a sua dor.",
+"A tristeza também faz parte, mas ela não precisa durar para sempre.",
+"Você tem direito de sentir, chorar e pedir ajuda.",
+"Está tudo bem não estar bem. O importante é não se isolar.",
+"Você faz diferença. Sua presença importa.",
+"A vida é preciosa. Cuide de você.",
+"Pequenos passos também são grandes conquistas.",
+"Lembre-se: você já venceu muitas coisas. Pode vencer mais essa.",
+"Seu bem-estar é importante. Cuide da sua mente também.",
+"Você não precisa dar conta de tudo.",
+"Fale. Desabafe. Procure apoio. Você não está sozinho(a).",
+"Você tem um coração enorme. Isso é uma força.",
+"A vida ainda pode trazer muitos capítulos bonitos para você.",
+"Você é suficiente. Do seu jeito.",
+"Nunca é tarde para buscar ajuda.",
+"Você importa. Hoje e sempre."
+];
+function novaMensagem(){
+  document.getElementById('msg').textContent =
+    mensagens[Math.floor(Math.random()*mensagens.length)];
+}
+novaMensagem();
+</script>
+</body>
+</html>
